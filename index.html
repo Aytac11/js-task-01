@@ -11,44 +11,44 @@
         <div class="header">
             <p>Registration Form</p>
         </div>
-        <form action="#">
+        <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
             <div class="login-input">
                 <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
+                <input type="text" id="fname" name="fname" required><br>
             </div>
             <div class="login-input">
                 <label for="lname">Last Name:</label><br>
-                <input type="text" id="lname" name="lname" ><br>
+                <input type="text" id="lname" name="lname" required><br>
             </div>
             <div class="login-input birthday">
                 <label for="birthday">Birthday:</label><br>
-                <input type="date" id="birthday" name="birthday" style="width: 158px;"><br>
+                <input type="date" id="birthday" name="birthday" style="width: 158px;" required><br>
             </div>
             <div class="login-input login-gender">
                 <label for="gender">Gender:</label><br>
-                <input type="radio" id="male" name="gender" value="male">
+                <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="female">
+                <input type="radio" id="female" name="gender" value="female" required>
                 <label for="female">Female</label><br>
             </div>
             <div class="login-input">
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
             </div>
             <div class="login-input">
                 <label for="phonnumber">Phon Number:</label><br>
-                <input type="number" id="num" name="num"><br>
+                <input type="number" id="phon" name="num" required><br>
             </div>
             <div class="login-input options">
                 <label for="subject">Subject:</label><br>
-                <select name="Choose option" style="width: 367px;" >
+                <select name="Choose option" id="subject" style="width: 367px;" required>
                     <option value="1">  </option>
                     <option value="2">1</option>
                     <option value="3">2</option>
                 </select>
             </div><br>
             <div class="login-input submit">
-                <input type="submit" value="Submit">
+                <input type="button" name="submitBtn" id="btn" value="Submit" />
             </div>
             
             
