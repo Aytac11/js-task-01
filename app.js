@@ -1,8 +1,8 @@
 var data = [];
 
-var name=document.querySelector('#fname');
-var nameInput=document.querySelector('#lname');
-var surnameInput=document.querySelector('#birthday');
+var nameInput=document.querySelector('#fname');
+var surnameInput=document.querySelector('#lname');
+var birthdayInput=document.querySelector('#birtday');
 var mailInput=document.querySelector('#male');
 var femailInput=document.querySelector('#female');
 var maleInput=document.querySelector('#email');
@@ -26,7 +26,9 @@ function createUser(_name,_surname,_birthday,_email,_phon,_gender,_subject){
 
 submitBtn=document.querySelector("#btn");
 submitBtn.addEventListener('click',function(){
-   var user = new createUser(name.value,surname.value,birtday.value,email.value,phon.value,gender.value,subject.value);
-
+   var user = new createUser(nameInput.value,surnameInput.value,birthdayInput.value,emailInput.value,phonInput.value,genderInput.value,subjectInput.value);
+   for(var i=0;i<data.length;i++){
+    data[i].show();
+}
 })
 
